@@ -44,6 +44,7 @@ public class Monster : LiveObject
 
     void Update()
     {
+        if (Main.inctance.GetGameState(Main.GameState.Paused)) return;
         if(_target==null) return;
         if (_speedAttack >= 0)
             _speedAttack -= Time.deltaTime;

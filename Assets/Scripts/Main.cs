@@ -5,6 +5,9 @@ public class Main : MonoBehaviour
 {
     public static Main inctance;
 
+    public const int width = 40;
+    public const int height = 20;
+
     [SerializeField]
     private Button _playBtn;
     [SerializeField]
@@ -36,6 +39,20 @@ public class Main : MonoBehaviour
                 SetActiveButton(false);
                 Instantiate(tank);
             }
+        }
+        else
+        {
+            SetActiveButton(false);
+            currentGameState = GameState.Playing;
+        }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            currentGameState = GameState.Paused;
+            SetActiveButton(true);
         }
     }
 

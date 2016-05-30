@@ -2,8 +2,6 @@
 
 public class MonsterController : MonoBehaviour
 {
-    private const int width = 40;
-    private const int height = 25;
     [SerializeField] private float _timeCreate;
     [SerializeField] private GameObject[] _monsters;
     [SerializeField] private int _maxMonsters;
@@ -33,7 +31,7 @@ public class MonsterController : MonoBehaviour
         if (monster != null)
         {
             monster.transform.parent = transform;
-            monster.transform.localPosition = new Vector3(Random.Range(-width, width), Random.Range(-height, height));
+            monster.transform.localPosition = new Vector3(Random.Range(-Main.width, Main.width), Random.Range(-Main.height, Main.height));
             monster.GetComponent<Monster>().Create(target, DecrementMonsters);
             countMonster++;
         }

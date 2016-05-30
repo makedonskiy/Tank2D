@@ -31,7 +31,8 @@ public class Tank : LiveObject
         var speed = moved*Speed*Time.deltaTime;
         transform.localPosition += new Vector3(speed*(float) Math.Cos(Mathf.Deg2Rad*transform.eulerAngles.z),
             speed*(float) Math.Sin(Mathf.Deg2Rad*transform.eulerAngles.z));
-        transform.eulerAngles += new Vector3(0, 0, angle*2);
+        transform.localPosition = new Vector3(Mathf.Clamp(transform.localPosition.x,-Main.width,Main.width), Mathf.Clamp(transform.localPosition.y, -Main.height, Main.height));
+        transform.eulerAngles += new Vector3(0, 0, angle * 2);
     }
 
     private void MovedTower(float angle)
