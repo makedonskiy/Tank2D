@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tank2D.CSharp", "Tank2D.CSharp.csproj", "{27DACFF1-9296-EB9B-9B83-636D752275D3}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{80EE8F73-FAE5-3D90-0112-C9B98192C82E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27DACFF1-9296-EB9B-9B83-636D752275D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27DACFF1-9296-EB9B-9B83-636D752275D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27DACFF1-9296-EB9B-9B83-636D752275D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27DACFF1-9296-EB9B-9B83-636D752275D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80EE8F73-FAE5-3D90-0112-C9B98192C82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EE8F73-FAE5-3D90-0112-C9B98192C82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EE8F73-FAE5-3D90-0112-C9B98192C82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EE8F73-FAE5-3D90-0112-C9B98192C82E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
